@@ -42,6 +42,6 @@ jobs:
       - name: Build and Push Docker
         run: |
             source venv/bin/activate
-            docker build -t myfirstpipeline/$IMAGE_NAME:$TAG .
+            docker build -t myfirstpipeline/$IMAGE_NAME:$TAG
             echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin
             docker push myfirstpipeline/$IMAGE_NAME:$TAG
