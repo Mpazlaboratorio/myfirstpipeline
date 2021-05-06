@@ -45,6 +45,7 @@ jobs:
             repo: '' # Current
             branch: working-dir/${{ github.ref }}
             working-directory: working-dir
-            docker build -t test/PytestDockerfile .
+            echo working-directory
+            # docker build -t test/PytestDockerfile .
            # echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin
             # docker push myfirstpipeline/$IMAGE_NAME:$TAG
