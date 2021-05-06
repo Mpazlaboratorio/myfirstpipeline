@@ -24,8 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
      - uses: actions/checkout@v2
-      run:
         - name: install dependencies
+        run:
         #  command: |
          #   python3 -m venv venv
           #  source venv/bin/activate
