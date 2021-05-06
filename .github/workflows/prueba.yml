@@ -43,5 +43,5 @@ jobs:
         run: |
             source venv/bin/activate
             docker build -t samply .
-           # echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin
-            # docker push myfirstpipeline/$IMAGE_NAME:$TAG
+            echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin 
+      # docker push myfirstpipeline/$IMAGE_NAME:$TAG
